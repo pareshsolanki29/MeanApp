@@ -8,28 +8,31 @@
 <div id="header" >
 <ul>
   <li>
-    <a rounterLink="">Home</a>
+    <a routerLink = "/home" routerLinkActive="active">Home</a>
   </li>
   <li>
-    <a rounterLink="">Questions</a>
+    <a routerLink = "/questions">Questions</a>
   </li>
   <li>
-    <a rounterLink="">New Questions</a>
+    <a routerLink = "/newquestion">New Questions</a>
   </li>
   <li>
-    <a rounterLink="">Login</a>
+    <a routerLink = "/login">Login</a>
   </li>
   <li>
-    <a rounterLink="">Register</a>
+    <a routerLink = "/register">Register</a>
+  </li>
+  <li>
+    <a routerLink = "/viewquestion">View Question</a>
   </li>
 </ul>
 </div>
 <div id="pageContent" >
-
+  <router-outlet></router-outlet>
 </div>
 <div id="footer" >
 
 </div>
 
 
-<router-outlet></router-outlet>
+
