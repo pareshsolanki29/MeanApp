@@ -1,3 +1,9 @@
-<p>
-  login works!
-</p>
+<div id="loginDiv">
+  <h2>Login Form</h2>
+  <form>
+    Email:<input type="text"  [(ngModel)] = 'email' name = 'email'><br>
+    Password:<input type="text" [(ngModel)] = 'password' name="password"><br>
+    <input type="submit" value="Login" (click)='onLoginClick()'>
+    {{message}}
+  </form>
+</div>
