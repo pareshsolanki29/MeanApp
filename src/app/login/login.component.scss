@@ -5,3 +5,9 @@
  height: 200px;
  margin: auto;
 }
+input.ng-valid.ng-touched{
+  border: solid 2px red;
+}
+input.ng-valid.ng-touched{
+  border: solid 2px green;
+}

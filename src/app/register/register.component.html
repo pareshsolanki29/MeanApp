@@ -1,3 +1,36 @@
-<p>
-  register works!
-</p>
+<div id="registerDiv">
+  <label for="txtEmail">Email</label>
+  <input type="text" id="txtEmail" [(ngModel)]="email">
+<br>
+  <label for="txtName">Name</label>
+  <input type="text" id="txtName" [(ngModel)]="name">
+<br>
+
+  <label for="password">password</label>
+  <input type="text" id="txtpassword" [(ngModel)]="password">
+
+<br>
+  <label for="txtMobile">Mobile</label>
+  <input type="text" id="txtMobile" [(ngModel)]="mobile">
+<br>
+ <input type="checkbox" id="chkNewsLetters" [(ngModel)]="receivewnewsletters">
+ <label for="chkNewsLetters"> Receive News Letters</label>
+ <br>
+ <label for="rbGender">Gender</label>
+ <br>
+ <input type="radio" [(ngModel)]="gender" value="Male" id="rbMale">
+ <label for="rdMale">Male</label>
+
+ <input type="radio" [(ngModel)]="gender" value="Female" id="rbMale">
+ <label for="rbFemale">Female</label>
+
+ <input type="radio" [(ngModel)]="gender" value="Other" id="rbMale">
+ <label for="rbOther">Other</label>
+<br>
+<input type="submit" value="Register" (click)="onRegisterClick()">
+<br>
+<p *ngIf="isRegistered">Success</p>
+<p *ngIf="!isRegistered">UnSuccessFul</p>
+
+
+</div>

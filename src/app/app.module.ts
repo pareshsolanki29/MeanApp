@@ -7,9 +7,11 @@ import { QuestionsModule} from './questions/questions.module';
 
 
 import {AccountModule} from './account/account.module';
+import { DurationPipe } from './duration.pipe';
 @NgModule({
   declarations: [
     AppComponent,
+    DurationPipe,
   ],
   imports: [
     BrowserModule,
